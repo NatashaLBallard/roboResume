@@ -80,7 +80,7 @@ public class HomeController {
 
     //process actions
 
-    @PostMapping("/process")
+    @PostMapping("/process") 
     public String processForm (@Valid General general, BindingResult result)
     {
         if (result.hasErrors()){
