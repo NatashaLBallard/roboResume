@@ -17,27 +17,27 @@ public class General {
 
     @NotNull
     @Size(min = 5)
-    private String firstName;
-
-    @NotNull
-    @Size(min = 5)
-    private String lastName;
-
-    @NotNull
-    @Size(min = 5)
-    private String email;
-
-    @NotNull
-    @Size(min = 5)
-    private String urlLinkedin;
-
-    @NotNull
-    @Size(min = 5)
-    private String urlGitHub;
-
-    @NotNull
-    @Size(min = 5)
-    private String urlTwitter;
+    private String general;
+//
+//    @NotNull
+//    @Size(min = 5)
+//    private String lastName;
+//
+//    @NotNull
+//    @Size(min = 5)
+//    private String email;
+//
+//    @NotNull
+//    @Size(min = 5)
+//    private String urlLinkedin;
+//
+//    @NotNull
+//    @Size(min = 5)
+//    private String urlGitHub;
+//
+//    @NotNull
+//    @Size(min = 5)
+//    private String urlTwitter;
 
 
     public long getId() {
@@ -48,51 +48,51 @@ public class General {
         this.id = id;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getGeneral() {
+        return general;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setGeneral(String general) {
+        this.general = general;
     }
 
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getUrlLinkedin() {
-        return urlLinkedin;
-    }
-
-    public void setUrlLinkedin(String urlLinkedin) {
-        this.urlLinkedin = urlLinkedin;
-    }
-
-    public String getUrlGitHub() {
-        return urlGitHub;
-    }
-
-    public void setUrlGitHub(String urlGitHub) {
-        this.urlGitHub = urlGitHub;
-    }
-
-    public String getUrlTwitter() {
-        return urlTwitter;
-    }
-
-    public void setUrlTwitter(String urlTwitter) {
-        this.urlTwitter = urlTwitter;
-    }
+//    public String getLastName() {
+//        return lastName;
+//    }
+//
+//    public void setLastName(String lastName) {
+//        this.lastName = lastName;
+//    }
+//
+//    public String getEmail() {
+//        return email;
+//    }
+//
+//    public void setEmail(String email) {
+//        this.email = email;
+//    }
+//
+//    public String getUrlLinkedin() {
+//        return urlLinkedin;
+//    }
+//
+//    public void setUrlLinkedin(String urlLinkedin) {
+//        this.urlLinkedin = urlLinkedin;
+//    }
+//
+//    public String getUrlGitHub() {
+//        return urlGitHub;
+//    }
+//
+//    public void setUrlGitHub(String urlGitHub) {
+//        this.urlGitHub = urlGitHub;
+//    }
+//
+//    public String getUrlTwitter() {
+//        return urlTwitter;
+//    }
+//
+//    public void setUrlTwitter(String urlTwitter) {
+//        this.urlTwitter = urlTwitter;
+//    }
 }

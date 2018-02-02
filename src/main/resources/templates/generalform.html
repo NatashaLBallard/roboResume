@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+
+<form action="#"
+      th:action="@{/process}"
+      th:object="${general}"
+      method="post">
+        <input type="hidden" th:field="*{id}" />
+
+    General: <input type="text" th:field="*{general}" />
+    <span th:if="${#fields.hasErrors('general')}"
+          th:errors="*{general}"></span><br/>
+
+    <!--Education: <input type="text" th:field="*{education}" />-->
+    <!--<span th:if="${#fields.hasError('education')}"-->
+          <!--th:errors="*{education}"></span><br/>-->
+
+    <!--Experience: <input type="text" th:field="*{experience}" />-->
+    <!--<span th:if="${#fields.hasError('experience')}"-->
+          <!--th:errors="*{experience}"></span><br/>-->
+
+    <!--Skills: <input type="text" th:field="*{skill}" />-->
+    <!--<span th:if="${#fields.hasError('skill')}"-->
+          <!--th:errors="*{skill}"></span><br/>-->
+
+    <input type="submit" value="Submit" />
+
+
+
+
+
+</form>
+
+</body>
+</html>

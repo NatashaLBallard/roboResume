@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+<a href="/add">Add</a><br/>
+<table>
+    <tr>
+        <th>General</th>
+        <th>Education</th>
+        <th>Experience</th>
+        <th>Skills</th>
+    </tr>
+    <tr th:each="general: ${generals}" >
+        <td th:text="${general.general}"></td>
+        <td>
+            <a th:href="@{/update/{id}(id=${general.id})}">Update</a>
+            <a th:href="@{/detail/{id}(id=${general.id})}">Details</a>
+            <a th:href="@{/delete/{id}(id=${general.id})}">Delete</a>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
